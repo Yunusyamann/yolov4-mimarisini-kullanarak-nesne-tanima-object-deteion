@@ -17,3 +17,4 @@ Yolo, end-to-end bir CNN (Convolutional Neural Network) mimarisi kullanır ve t�
 https://colab.research.google.com/drive/1hQO4nOoD6RDxdbz3C1YSiifTsyZjZpYm?usp=sharing Linkine giderek bu notebookun bir kopyasını drive'a kaydedidiyoruz daha sonra bizden istediği adımları tek tek uyguluyoruz (Eğitim 2 saate yakın sürebilir)<br />
 5-Adımları doğru bir şekilde takip ettiyseniz drive'ınızda .cfg ve .weights uzantılı iki dosya bulacaksınız bunları indirip bir klasöre alalım.<br />
 6-objectdeteion.py isimli dosyayı indirip oluşturduğumuz klasöre alalım ve kodumuzu çalıştıralım.<br />
+Not: Kodda bulunan, weights ve cfg dosyalarını tanımladığımız kısımda dosya isimleri tam adıyla yazılmalıdır bunu değiştirmeniz gerekebilir.
