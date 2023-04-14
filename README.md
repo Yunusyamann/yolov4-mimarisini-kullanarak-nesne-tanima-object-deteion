@@ -5,7 +5,7 @@ Custom dataset oluştrurarak nesne tanıma
 Diyelim ki elimzide bir nesne var ve bizim yapmak istediğimiz şey ise bu nesneyi kameramız algıladığı zaman terminalde bir komut döndürmesi.
 Bunu yapmak için görüntü işlem algoritmalarını kullanmalıyız . İsterseniz görüntü işlemin ne olduğuna değinelim. Görüntü işleme algoritmaları, dijital görüntülerdeki pikseller üzerinde işlem yaparak, görüntülerin iyileştirilmesi, analizi, sıkıştırılması, tanınması gibi birçok amaçla kullanılan matematiksel işlemlerdir. Görüntü işleme algoritmaları, genellikle dijital görüntülerin analizi için kullanılan çeşitli işlemleri içerir. Bunlar arasında görüntü iyileştirme, filtreleme, kenar algılama, nesne tanıma, yüz tanıma, renk düzeltme, özellik çıkarma ve desen tanıma gibi işlemler yer alabilir. 
 Şimdi ise datasetimizi oluşturalım :
-1- Öncelikle labelimg programını indirelim .
+1- Öncelikle labelimg programını indirelim .\n
 programın buradan indirebilirsiniz: https://github.com/heartexlabs/labelImg
 2-Programı açıp dataset oluşturacağımız tüm fotoğrafları bir klasöre toplayalım ve programdan open dir diyerek klasörü açalım
 Şimdi ise tüm fotoğrafları tek tek etiketlemeniz lazım ( programın sol tarafından pascal yazan kısmı değiştirip yolo yapalım)
