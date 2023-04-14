@@ -1,5 +1,5 @@
 # yolov4-mimarisini-kullanarak-nesne-tan-ma-object-deteion-
-<big>Custom dataset oluştrurarak nesne tanıma<big>
+<big>Custom dataset oluştrurarak nesne tanıma</big>
 
 
 Diyelim ki elimzide bir nesne var ve bizim yapmak istediğimiz şey ise bu nesneyi kameramız algıladığı zaman terminalde bir komut döndürmesi.
