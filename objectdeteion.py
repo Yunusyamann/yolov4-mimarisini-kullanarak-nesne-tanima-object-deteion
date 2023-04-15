@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 import time
 
-# YOLOv4 ağırlık dosyasını yükleme
+# eğitimden sonra indirdiğimiz dosyaları burada tanımlıyoruz.
 net = cv2.dnn.readNet("yenideneme.weights", "yeni.cfg")
 
-# Kamera bağlantısını açma
+
 cap = cv2.VideoCapture(0)
 
 # FPS sayacı
@@ -16,18 +16,17 @@ while True:
     _, img = cap.read()
     height, width, channels = img.shape
 
-    # YOLOv4 giriş görüntüsü boyutu
+  
     input_blob = cv2.dnn.blobFromImage(img, 1/255, (416, 416), swapRB=True, crop=False)
 
-    # Ağırlık dosyası ile yüklenen YOLOv4 modeli ile çıktı hesaplama
+    
     net.setInput(input_blob)
     layer_outputs = net.forward(net.getUnconnectedOutLayersNames())
 
-    # Tespit edilen bitki nesnesi için listeler oluşturma
     bitki_confidences = []
     bitki_boxes = []
 
-    # Tespit edilen nesneleri filtreleme ve sınırlayıcı kutuları çizme
+    
     for output in layer_outputs:
         for detection in output:
             scores = detection[5:]
@@ -46,7 +45,7 @@ while True:
                 bitki_boxes.append([x, y, w, h])
                 bitki_confidences.append(float(confidence))
 
-    # Sadece en yüksek güvenlik puanına sahip bitki nesnesi
+    
     if len(bitki_boxes) > 0:
         max_bitki_index = np.argmax(bitki_confidences)
         bitki_box = bitki_boxes[max_bitki_index]
@@ -58,7 +57,7 @@ while True:
         print("0")
        
 
-    # FPS sayacını güncelleme
+  
     if fps_start_time is None:
         fps_start_time = time.time()
     else:
@@ -70,11 +69,10 @@ while True:
             fps_start_time = None
             fps_counter = 0
 
-    # Görüntüyü ekranda gösterme
+   
     cv2.imshow("Bitki Tespiti", img)
     if cv2.waitKey(10) & 0xFF == ord('q'):
         break
 
-# Temizleme
 cap.release()
 cv2.destroyAllWindows()
