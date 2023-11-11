@@ -1,4 +1,4 @@
-# yolov4-mimarisini-kullanarak-nesne-tan-ma-object-deteion-
+# yolov4-mimarisini-kullanarak-nesne-tanima-object-deteion-
 <big>Custom dataset oluştrurarak nesne tanıma</big>
 
 
