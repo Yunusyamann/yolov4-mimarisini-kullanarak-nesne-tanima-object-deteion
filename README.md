@@ -18,7 +18,9 @@ Etiketlemeden sonra ise nesnenin class isimlerinin aynı olmasına dikkat edin.<
 
 3- Şimdi ise oluşturduğumuz dataseti görüntü işlem algortimalarından en yaygın kullanılan yolo yu kullanarak training yapacağız.
 Ama öncesinde Yolo ya biraz değinmek istiyorum :<br />
-Yolo, end-to-end bir CNN (Convolutional Neural Network) mimarisi kullanır ve tüm nesne tespiti işlemini bir kez yapar. Bu, ağın hızlı ve gerçek zamanlı nesne tespiti yapabilmesini sağlar. Yolo, çıktı katmanında tüm nesnelerin sınıfının, konumunun ve boyutunun olasılıklarını verir. Bu olasılıklar daha sonra eşik değerleri ile karşılaştırılır ve belirli bir eşik değerinin altındaki nesneler reddedilir. Kalan nesnelerin sınıfı, konumu ve boyutu kullanıcıya sunulur. Yolo yu dezavantaj olarak görebileceğimiz nokta ise diğer nesne tespit algoritmalarına göre daha az doğruluk değerine sahip olmasıdır.<br />
+
+
+  Yolo, end-to-end bir CNN (Convolutional Neural Network) mimarisi kullanır ve tüm nesne tespiti işlemini bir kez yapar. Bu, ağın hızlı ve gerçek zamanlı nesne tespiti yapabilmesini sağlar. Yolo, çıktı katmanında tüm nesnelerin sınıfının, konumunun ve boyutunun olasılıklarını verir. Bu olasılıklar daha sonra eşik değerleri ile karşılaştırılır ve belirli bir eşik değerinin altındaki nesneler reddedilir. Kalan nesnelerin sınıfı, konumu ve boyutu kullanıcıya sunulur. Yolo yu dezavantaj olarak görebileceğimiz nokta ise diğer nesne tespit algoritmalarına göre daha az doğruluk değerine sahip olmasıdır.<br />
 
 
 4- Şimdi eğitime geçebiliriz. Eğitimimizi google nin bir aracı olan Colab de yapacağız. Bunun sebebi ise Colabin bize ücretsiz sunmuş olduğu cpu desteğidir.
