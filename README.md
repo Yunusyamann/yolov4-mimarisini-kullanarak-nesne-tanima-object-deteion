@@ -1,4 +1,4 @@
-# yolov4-mimarisini-kullanarak-nesne-tanima-object-deteion-
+# yolov4-mimarisini-kullanarak-nesne-tanima-object-detection-
 
 <div align="center"><img src="image.jpg" alt="resim" /></div>
 <big><b>Custom dataset oluştrurarak nesne tanıma</b></big>
